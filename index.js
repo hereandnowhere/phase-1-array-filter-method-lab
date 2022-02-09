@@ -26,4 +26,11 @@ function fuzzyMatch(drivers, letters){
 //  The function should return each element whose `name` property matches the
 //  provided `string` argument.
 
-function matchName(){}
+
+
+function matchName(drivers, string){
+    const matchedName = drivers.filter(function(drivers){
+        return drivers.name === string;
+    })
+    return matchedName;
+}
